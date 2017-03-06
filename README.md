@@ -141,20 +141,10 @@ Irving	499.92
 
 ##Execution
 
-Une fois le test est réussi en local, on le teste sous hdfs :
-on crée un repertoire training contenant l'input sous hdfs avec la commande : 
-hdfs dfs -mkdir training
-hdfs dfs -mkdir training/input
-hdfs dfs -put purchases.txt training/input
-
-On compile ensuite le code de mapper et reducer déjà crée :
-javac -classpath `yarn classpath` training/*.java
-
-On archive ces .class dans un jar :
-jar cvf HadoopSamples.jar training/*.class
+Une fois le test est réussi en local, on exporte le jar
 
 on exécute ainsi le jar :
-yarn jar HadoopSamples.jar training.Driver training/input training/output
+hadoop jar /home/cloudera/Desktop/Tp1.jar training.Driver  myinput/purchases.txt.part outputhomework
 
 
 
