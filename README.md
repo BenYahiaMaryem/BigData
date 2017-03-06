@@ -4,7 +4,7 @@ HomeWork
 # Le principe de Map Reduce en Java
 
 ##Le principe de Map Reduce en Java a certaines diférences par rapport à celui en Python.
-En effet, on remarque que l'exécution du code en Java est plus rapide qu'avec Python.
+<p>En effet, on remarque que l'exécution du code en Java est plus rapide qu'avec Python.
 Cependant, le developpement du code en python est plus rapide à celui en java.
 
 En Java, on a besoin d'implémenter le mapper, reducer et le driver.
@@ -20,7 +20,7 @@ pour une clé donnée, dans un processus appelé shuffle.
 L'entrée du reducer est la suivante : (store, [cost1, cost2, ..., costn]).
 
 On remarque bien que cette entrée du reducer en Java différe de celle de Python, 
-d'où le traitement sera différent.
+d'où le traitement sera différent.<p>
 
 
 
